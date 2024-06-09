@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Cards</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="message">
+        <p>The designs represent both desktop and mobile view</p>
+        <p>To view interactions: Run the designs in prototype mode.</p>
+    </div>
+    
+    <div class="cards-container">
+        <div class="card" onclick="showFullImage('images/1.jpeg', 'Fennec Fox', 'India')">
+            <img src="images/1.jpeg" alt="Fennec Fox">
+            <div class="card-info">
+                <h3>Fennec Fox</h3>
+                <p>India</p>
+            </div>
+        </div>
+        <div class="card" onclick="showFullImage('images/2.jpeg', 'Humpback Whale', 'South Africa')">
+            <img src="images/2.JPeG" alt="Humpback Whale">
+            <div class="card-info">
+                <h3>Humpback Whale</h3>
+                <p>South Africa</p>
+            </div>
+        </div>
+        <div class="card" onclick="showFullImage('images/3.jpeg', 'Common Brown Baboon', 'South Africa')">
+            <img src="images/3.JPEG" alt="Common Brown Baboon">
+            <div class="card-info">
+                <h3>Common Brown Baboon</h3>
+                <p>South Africa</p>
+            </div>
+        </div>
+        <div class="card" onclick="showFullImage('images/4.jpeg', 'Spotted Deer', 'Amazon')">
+            <img src="images/4.jpeg" alt="Spotted Deer">
+            <div class="card-info">
+                <h3>Spotted Deer</h3>
+                <p>Amazon</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullImageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullImage">
+        <div id="caption"></div>
+    </div><br>
+    <div class="image-strip" onclick="showFullImage('images/1.jpeg', 'Fennec Fox', 'India')">
+        <div class="strip">
+            <img src="images/1.JPeG" alt="Image 1">
+        </div>
+        <div class="strip" onclick="showFullImage('images/2.jpeg', 'Humpback Whale', 'South Africa')">
+            <img src="images/2.JPeG" alt="Image 2">
+        </div>
+        <div class="strip" onclick="showFullImage('images/3.jpeg', 'Common Brown Baboon', 'South Africa')">
+            <img src="images/3.JPEG" alt="Image 4">
+        </div>
+        <div class="strip" onclick="showFullImage('images/4.jpeg', 'Spotted Deer', 'Amazon')">
+            <img src="images/4.jpeg" alt="Image 3">
+        </div>
+    </div>
+
+
+    <script src="javasript.js"></script>
+</body>
+</html>

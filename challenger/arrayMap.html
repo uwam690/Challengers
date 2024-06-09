@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subarray Sum</title>
+    <style>
+        h2{
+            font-family: century;
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(3, 95, 12);
+        }
+        label{
+            font-family: century;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(3, 3, 3);
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            border-radius: 8px;
+            border-color: rgb(0, 4, 0);
+
+        }
+        button{
+            height: 35px;
+            border-radius: 6px;
+            border-color: rgba(4, 117, 237, 0.829); 
+            font-family: times new roman;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: rgb(8, 12, 247);
+        }
+        button:hover{
+            background-color: white;
+            color: blue;
+         border-color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h2>Check Subarray Sum</h2>
+    <div><br>
+        <label for="arrayInput">Array (comma-separated):</label><br><br>
+        <input type="text" id="arrayInput" placeholder="e.g., 4,2,7,1,9,5">
+    </div><br>
+    <div>
+        <label for="targetInput">Target Sum:</label><br><br>
+        <input type="number" id="targetInput" placeholder="e.g., 17">
+    </div><br>
+    <button onclick="checkSubarraySum()">Check</button>
+    <p id="result"></p><br>
+    <script src="arrayMap.js"></script>
+</center>
+</body>
+</html>

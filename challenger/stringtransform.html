@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer</title>
+    <style>
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(7, 7, 7);
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            border-radius: 8px;
+            border-color: rgb(0, 0, 255);
+
+        }
+        button{
+            height: 35px;
+            border-radius: 6px;
+            border-color: rgba(244, 4, 192, 0.829); 
+            font-family: times new roman;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: rgb(40, 8, 247);
+        }
+        button:hover{
+            background-color: white;
+            color: rgb(8, 8, 8);
+         border-color: rgb(13, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>String Transformer</h1>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <button onclick="transformString()">Transform</button>
+    <p id="output"></p>
+
+    <script src="stringTransform.js"></script>
+</center>
+</body>
+</html>
